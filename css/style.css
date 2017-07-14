@@ -1,0 +1,187 @@
+/* Custom CSS for Musicog */
+
+/* Body gradient goes to dark blue at the bottom */
+
+.layout-container {
+  background: url("../images/bg-body.jpg") repeat-x left bottom;
+}
+
+/* Header background is not full width*/
+.layout-container > header {
+  background-color: white;
+}
+
+/* Header has score image as background */
+.layout-container > header > .site-header {
+  background: url('../images/score-blue.png') repeat-x center bottom;
+}
+
+/* Site name appears on header left; logo on header right. */
+@media (min-width: 64em) {
+  header .region-header {
+    width: 100%;
+  }
+}
+
+.layout-container > header .region-header .site-name {
+  max-width: 25em;
+  float:left;
+  padding-left: 40px;
+
+}
+.layout-container > header .region-header .site-logo {
+    float: right;
+    margin-right: 1em;
+}
+
+/* Font stying for site name and slogan*/
+.layout-container > header .region-header .site-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+.layout-container > header .region-header a {
+  color: #000;
+}
+
+
+
+/* Site Slogan appears on its own, full-width, line at the bottom of the header */
+.layout-container > header .region-header {
+  padding: 1em 0 0 0;
+}
+
+.region-header .branding-wrapper::after {
+  content: "";
+  clear:both;
+  display: table;
+}
+
+.layout-container > header .region-header .site-slogan {
+  background-color: #5c7896;
+  padding: 3px 0 5px 40px;
+  font-size: 1em;
+}
+
+/* Spacing between site title and site slogan. */
+.layout-container > header .region-header .site-name a {
+  margin-bottom: 0.5em;
+}
+
+
+/* Sidebar menu */
+
+/* Sidebar offset from left edge */
+
+.region-sidebar-first {
+  padding-left: 1em;
+}
+
+/* Menus on sidebar have the same grey shading and borders as old site */
+aside .block h2, aside .block h3 {
+  border-bottom: 0px;
+  font-size: 0.9em;
+  color: #777;
+  margin: 0;
+  padding: 5px 10px;
+  background: #eee ;
+  -moz-border-radius-topleft: 0.333em;
+  -webkit-border-top-left-radius: 0.333em;
+  -moz-border-radius-topright: 0.333em;
+  -webkit-border-top-right-radius: 0.333em;
+  border: solid 1px #ddd;
+  border-bottom: 0;
+}
+aside .block {
+  margin: 1em 0;
+}
+aside .block ul.menu li a {
+  font-size: 0.9em;
+}
+
+ul.menu li {
+  margin: 0 0 0 0;
+}
+li.leaf {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+ul.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+  border: solid 1px #ddd;
+}
+ul.menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+ul.menu ul ul {
+  margin: 0;
+  padding: 0;
+}
+ul.menu li,
+ul.menu li.leaf,
+ul.menu li.expanded,
+ul.menu li.collapsed {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.menu li a {
+  display: block;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border-bottom: solid 1px #eee;
+  color: #888;
+}
+ul.menu li.active-trail > a,
+ul.menu li.active-trail > a.active,
+ul.menu li a.active,
+ul.menu li a.active:visited {
+  color: #555;
+  text-shadow: #fff 1px 1px 1px;
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+ul.menu a {
+  color: #888;
+  padding: 0.25em 1em;
+}
+ul.menu a:visited {
+  color: #888;
+}
+ul.menu a:hover {
+  color: #000;
+}
+ul.menu ul a {
+  font-size: 0.9em;
+}
+/* Prevent duplicate bottom borders */
+ul.menu li.last a,
+ul.menu li:last-child a {
+  border-bottom: none;
+}
+ul.menu li li.last a,
+ul.menu li li:last-child a {
+  border-bottom: solid 1px #eee;
+}
+
+/* Remove the background images for nested list items that don't have any children. */
+ul.menu .expanded .leaf a,
+ul.menu .collapsed .leaf a {
+  background-image: none;
+}
+
+
+/* Front page has score as background image. */
+.path-frontpage .block-system-main-block {
+  	background: url(../images/score1.gif) center top;
+  	background-repeat: repeat-y;
+}
