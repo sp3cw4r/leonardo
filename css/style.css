@@ -23,6 +23,10 @@
   }
 }
 
+/* HACK: break at 25em to cause the header to wrap into two lines, like:
+     Auditory Perception and Music Cognition
+     Research and Training Laboratory
+*/
 .layout-container > header .region-header .site-name {
   max-width: 25em;
   float:left;
