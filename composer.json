@@ -1,0 +1,7 @@
+{
+  "name": "roblib/leonardo",
+  "description": "A custom sub-theme of Da Vinci, for the Musicog site.",
+  "type": "drupal-custom-theme",
+  "minimum-stability": "dev",
+  "require": { }
+}
